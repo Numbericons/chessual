@@ -5,12 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server/index.js"
+    "server": "node server/index.js",
+    "client": "cd client && npm run start",
+    "build:client": "cd client && npm run build",
+    "iall": "npm i && cd client && npm i",
+    "startboth": "npm run server & npm run client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sass": "^1.30.0",
+    "server": "^1.0.31"
   }
 }
