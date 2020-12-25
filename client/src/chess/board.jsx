@@ -2,8 +2,8 @@
 
 const Square = require("./square") 
 
-class Board {
-// export default class Board {
+// class Board {
+export default class Board {
   constructor() {
     this.grid = this.grid();
   }
@@ -24,3 +24,5 @@ class Board {
     return gridArr;
   }
 }
+
+// module.exports = Board;
