@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 import './stylesheets/input.scss';
 import App from './App';
+import Table from './chess/table';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Table />
   </React.StrictMode>,
   document.getElementById('root')
 );
