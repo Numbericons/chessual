@@ -68,12 +68,39 @@ table {
   font-size: 5vh;
   font-family: Open sans-serif;
   font-weight: 800;
+  color: silver;
 }
 
 .board {
-  height: 50vh;
-  width: 50vh;
+  height: 40vh;
+  width: 32vw;
   border: solid black 1px;
+}
+.board-rows {
+  display: flex;
+  flex-direction: column;
+}
+.board-rows-row {
+  display: flex;
+}
+
+.sq-white {
+  height: 8vh;
+  width: 4vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sq-black {
+  height: 8vh;
+  width: 4vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=output.css.map */

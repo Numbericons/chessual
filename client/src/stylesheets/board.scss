@@ -1,6 +1,12 @@
 .board{
-  height: 50vh;
-  width: 50vh;
+  height: 40vh;
+  width: 32vw;
   border: solid black 1px;
-  
+  &-rows{
+    display: flex;
+    flex-direction: column;
+    &-row{
+      display: flex;
+    }
+  }
 }

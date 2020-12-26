@@ -1,0 +1,26 @@
+import React from 'react';
+import Piece from './piece';
+
+export default class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.attr = this.props.attr;
+  }
+
+  showPiece(){
+    if (this.props.attr.piece) return <Piece attr={piece}></Piece>
+
+    return "P";
+  }
+
+  render() {
+    const border = 'sq-' + this.attr.color;
+    const piece = this.showPiece();
+
+    return (
+      <div className={border}>
+        {piece}
+      </div>
+    )
+  }
+}
