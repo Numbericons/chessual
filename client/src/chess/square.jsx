@@ -8,9 +8,9 @@ export default class Square extends React.Component {
   }
 
   showPiece(){
-    if (this.props.attr.piece) return <Piece attr={piece}></Piece>
+    if (this.props.attr && this.props.attr.piece) return <Piece attr={this.props.attr.piece}></Piece>
 
-    return "P";
+    return "";
   }
 
   render() {

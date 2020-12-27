@@ -2,6 +2,9 @@ import React from 'react';
 import Board from './board';
 import Square from './square';
 
+import { DndProvider } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
+
 export default class Table extends React.Component {
   constructor(props) {
     super(props);
@@ -38,15 +41,26 @@ export default class Table extends React.Component {
     if (this.board) { 
       board = this.showBoard(this.board.grid) }
 
-    return (
-      <div className="border">
-        <div className="table">
-          <div className="table-head">
-            <h1 className="table-head-title">Chessual</h1>
-              {board}
-          </div>
+    return (<DndProvider backend={HTML5Backend}><div className="border">
+      <div className="table">
+        <div className="table-head">
+          <h1 className="table-head-title">Chessual</h1>
+          {board}
         </div>
       </div>
+      </div ></DndProvider >
     )
+    // return (
+    //   <div className="border">
+    //     <div className="table">
+    //       <div className="table-head">
+    //         <h1 className="table-head-title">Chessual</h1>
+    //           {board}
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   }
 }
+
+// return <DndProvider backend={HTML5Backend}>...</DndProvider>

@@ -96,11 +96,14 @@ table {
 .sq-black {
   height: 8vh;
   width: 4vw;
-  background-color: black;
-  color: white;
+  background-color: crimson;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.piece {
+  font-size: 5vh;
 }
 
 /*# sourceMappingURL=output.css.map */
