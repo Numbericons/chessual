@@ -62,5 +62,3 @@ export default class Table extends React.Component {
     // )
   }
 }
-
-// return <DndProvider backend={HTML5Backend}>...</DndProvider>
